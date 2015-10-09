@@ -18,18 +18,11 @@ public class Pupil {
 	public int getMark(String s, Scanner scanner) {
 		int input = 0;
 
-		// trying to handle input error !!breaks if string entered!!
-		try {
-			System.out.println("Enter the " + s + " mark : ");
-			input = scanner.nextInt();
-			if (rangeCheck(input) == false) {
-				System.out.println("Out of range, try again");
-				input = getMark(s, scanner);
-			}
-		} catch (InputMismatchException e) {
-
-			System.out.println("Can only be integers, try again");
-			getMark(s, scanner);
+		System.out.println("Enter the " + s + " mark : ");
+		input = scanner.nextInt();
+		if (rangeCheck(input) == false) {
+			System.out.println("Out of range, try again");
+			input = getMark(s, scanner);
 		}
 
 		return input;
