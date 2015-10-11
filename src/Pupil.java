@@ -7,13 +7,6 @@ public class Pupil {
 	public int getMark(String s, Scanner scanner, int allMarks) {
 		int input = 0;
 
-<<<<<<< Updated upstream
-		System.out.println("Enter the " + s + " mark : ");
-		input = scanner.nextInt();
-		if (rangeCheck(input) == false) {
-			System.out.println("Out of range, try again");
-			input = getMark(s, scanner);
-=======
 		// trying to handle input error !!breaks if string entered!!
 		try {
 			System.out.println("Enter the " + s + " mark : ");
@@ -27,7 +20,6 @@ public class Pupil {
 			System.out.println("Can only be integers, try again");
 			scanner.next();
 			getMark(s, scanner, allMarks);
->>>>>>> Stashed changes
 		}
 
 		return input;

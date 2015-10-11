@@ -17,7 +17,7 @@ public class Grades {
 		Subjects science = new Subjects();
 		Subjects socialScience = new Subjects();
 		
-		//set name and max marks for ach subject
+		//set name and max marks for each subject
 		math.setSubject("math");
 		math.setMarks(100);
 		subjectList.add(math);
